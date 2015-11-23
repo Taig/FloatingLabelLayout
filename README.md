@@ -9,14 +9,14 @@
 ### sbt
 
 ````
-libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.0"
+libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.1"
 ````
 
 ### Gradle
 
 ````
 dependencies {
-    compile 'io.taig.android:floating-label-layout:1.1.0@aar'
+    compile 'io.taig.android:floating-label-layout:1.1.1@aar'
 }
 ````
 
