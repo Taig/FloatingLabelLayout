@@ -8,6 +8,7 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.StyleRes;
 import android.support.design.widget.ScopeStealing;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorListenerAdapter;
 import android.text.TextUtils;
@@ -88,10 +89,13 @@ public class FloatingLabelLayout extends LinearLayout {
 
         final int errorAppearance = array.getResourceId( R.styleable.TextInputLayout_errorTextAppearance, 0 );
 
-        if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
-            error.setTextAppearance( errorAppearance );
-        } else {
+        try {
             error.setTextAppearance( getContext(), errorAppearance );
+        } catch( Exception exception ) {
+            // Probably caused by our theme not extending from Theme.Design*. Instead
+            // we manually set something appropriate
+            error.setTextAppearance( getContext(), R.style.TextAppearance_AppCompat_Caption );
+            error.setTextColor(ContextCompat.getColor( getContext(), R.color.design_textinput_error_color_light ) );
         }
 
         error.setVisibility(
