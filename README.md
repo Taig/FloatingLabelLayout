@@ -9,14 +9,14 @@
 ### sbt
 
 ````scala
-libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.7"
+libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.8"
 ````
 
 ### Gradle
 
 ````groovy
 dependencies {
-    compile 'io.taig.android:floating-label-layout:1.1.7@aar'
+    compile 'io.taig.android:floating-label-layout:1.1.8@aar'
 }
 ````
 
