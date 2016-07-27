@@ -1,4 +1,4 @@
-# FloatingLabelLayout
+# Floating Label Layout
 
 [![CircleCI](https://circleci.com/gh/Taig/floating-label-layout/tree/master.svg?style=shield)](https://circleci.com/gh/Taig/floating-label-layout/tree/master)
 
@@ -9,14 +9,14 @@
 ### sbt
 
 ```scala
-libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.8"
+libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.9"
 ```
 
 ### Gradle
 
 ```groovy
 dependencies {
-    compile 'io.taig.android:floating-label-layout:1.1.8@aar'
+    compile 'io.taig.android:floating-label-layout:1.1.9@aar'
 }
 ```
 
