@@ -21,7 +21,7 @@ normalizedName := "floating-label-layout"
 
 organization := "io.taig.android"
 
-platformTarget := "android-23"
+platformTarget := "android-24"
 
 publishArtifact in ( Compile, packageDoc ) := false
 
@@ -30,7 +30,7 @@ scalacOptions ++=
     "-feature" ::
     Nil
 
-targetSdkVersion := "23"
+targetSdkVersion := "24"
 
 typedResources := false
 
