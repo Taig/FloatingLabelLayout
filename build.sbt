@@ -2,7 +2,7 @@ androidBuildAar
 
 autoScalaLibrary := false
 
-githubProject := "floatinglabellayout"
+githubProject := "floating-label-layout"
 
 javacOptions ++=
     "-source" :: "1.7" ::
