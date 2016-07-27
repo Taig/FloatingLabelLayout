@@ -10,12 +10,10 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "design" % "24.0.0" ::
+    "com.android.support" % "design" % "24.1.1" ::
     Nil
 
 minSdkVersion := "7"
-
-name := "FloatingLabelLayout"
 
 normalizedName := "floating-label-layout"
 
