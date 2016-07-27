@@ -1,28 +1,28 @@
 # FloatingLabelLayout
 
-> A simple replication of the `TextInputLayout` from the Android design library
+[![CircleCI](https://circleci.com/gh/Taig/floating-label-layout/tree/master.svg?style=shield)](https://circleci.com/gh/Taig/floating-label-layout/tree/master)
 
-[![Circle CI](https://circleci.com/gh/Taig/FloatingLabelLayout.svg?style=svg)](https://circleci.com/gh/Taig/FloatingLabelLayout)
+> A simple replication of the `TextInputLayout` from the Android design library
 
 ## Download
 
 ### sbt
 
-````scala
+```scala
 libraryDependencies += "io.taig.android" % "floating-label-layout" % "1.1.8"
-````
+```
 
 ### Gradle
 
-````groovy
+```groovy
 dependencies {
     compile 'io.taig.android:floating-label-layout:1.1.8@aar'
 }
-````
+```
 
 ## Usage
 
-````xml
+```xml
 <io.taig.android.widget.FloatingLabelLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -31,4 +31,4 @@ dependencies {
     <RadioGroup ... />
 
 </io.taig.android.widget.FloatingLabelLayout>`
-````
+```
