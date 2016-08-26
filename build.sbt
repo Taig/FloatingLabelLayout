@@ -10,7 +10,7 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "design" % "24.1.1" ::
+    "com.android.support" % "design" % "24.2.0" ::
     Nil
 
 minSdkVersion := "7"
@@ -27,8 +27,6 @@ scalacOptions ++=
     "-deprecation" ::
     "-feature" ::
     Nil
-
-targetSdkVersion := "24"
 
 typedResources := false
 
