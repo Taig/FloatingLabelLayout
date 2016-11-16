@@ -10,7 +10,7 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "design" % "24.2.0" ::
+    "com.android.support" % "design" % "25.0.1" ::
     Nil
 
 minSdkVersion := "7"
