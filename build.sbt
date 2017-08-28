@@ -7,19 +7,20 @@ githubProject := "floating-label-layout"
 javacOptions ++=
     "-source" :: "1.7" ::
     "-target" :: "1.7" ::
+    "-Xlint:deprecation" ::
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "design" % "25.1.0" ::
+    "com.android.support" % "design" % "26.0.1" ::
     Nil
 
-minSdkVersion := "7"
+minSdkVersion := "11"
 
 normalizedName := "floating-label-layout"
 
 organization := "io.taig.android"
 
-platformTarget := "android-24"
+platformTarget := "android-26"
 
 publishArtifact in ( Compile, packageDoc ) := false
 

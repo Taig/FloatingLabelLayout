@@ -95,7 +95,7 @@ public class FloatingLabelLayout extends LinearLayout {
             // Probably caused by our theme not extending from Theme.Design*. Instead
             // we manually set something appropriate
             error.setTextAppearance( getContext(), R.style.TextAppearance_AppCompat_Caption );
-            error.setTextColor(ContextCompat.getColor( getContext(), R.color.design_textinput_error_color_light ) );
+            error.setTextColor(ContextCompat.getColor( getContext(), loadErrorColor() ) );
         }
 
         error.setVisibility(
@@ -104,6 +104,17 @@ public class FloatingLabelLayout extends LinearLayout {
 
         array.recycle();
     }
+
+    private int loadErrorColor() {
+    TypedValue value = new TypedValue();
+    TypedArray array = getContext().obtainStyledAttributes(
+        value.data,
+        new int[] { R.attr.textColorError }
+    );
+    int color = array.getColor( 0, 0 );
+    array.recycle();
+    return color;
+}
 
     @Override
     protected void onFinishInflate() {
@@ -148,7 +159,7 @@ public class FloatingLabelLayout extends LinearLayout {
         }
 
         if( !TextUtils.isEmpty( error ) ) {
-            ViewCompat.setAlpha( this.error, 0f );
+            setAlpha( 0f );
             setErrorEnabled( true );
             this.error.setText( error );
 
