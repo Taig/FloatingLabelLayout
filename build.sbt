@@ -11,7 +11,7 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "design" % "26.0.1" ::
+    "com.android.support" % "design" % "26.1.0" ::
     Nil
 
 minSdkVersion := "11"
@@ -23,6 +23,8 @@ organization := "io.taig.android"
 platformTarget := "android-26"
 
 publishArtifact in ( Compile, packageDoc ) := false
+
+resolvers += ("Google Maven" at "https://maven.google.com")
 
 scalacOptions ++=
     "-deprecation" ::
