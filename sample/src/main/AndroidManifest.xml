@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.taig.android.floating_label_layout.sample">
+
+    <application
+        android:label="FloatingLabelLayout Sample"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <activity android:name="io.taig.android.widget.sample.SampleActivity">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

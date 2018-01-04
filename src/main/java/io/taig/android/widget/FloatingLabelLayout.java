@@ -4,7 +4,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.StyleRes;
 import android.support.design.widget.ScopeStealing;
@@ -13,6 +12,7 @@ import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorListenerAdapter;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,6 +92,8 @@ public class FloatingLabelLayout extends LinearLayout {
         try {
             error.setTextAppearance( getContext(), errorAppearance );
         } catch( Exception exception ) {
+            Log.e("FloatingLabelLayout", "Could not apply text appearance", exception);
+
             // Probably caused by our theme not extending from Theme.Design*. Instead
             // we manually set something appropriate
             error.setTextAppearance( getContext(), R.style.TextAppearance_AppCompat_Caption );
