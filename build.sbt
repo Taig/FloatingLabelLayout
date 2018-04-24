@@ -3,7 +3,7 @@ lazy val core = project.in(file("."))
   .settings(Settings.common)
   .settings(
     libraryDependencies ++=
-      "com.android.support" % "design" % "26.1.0" ::
+      "com.android.support" % "design" % "27.1.1" ::
       Nil,
     name := "floating-label-layout",
     publishArtifact in ( Compile, packageDoc ) := false,

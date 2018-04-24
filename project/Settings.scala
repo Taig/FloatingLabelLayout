@@ -1,4 +1,4 @@
-import android.Keys.{minSdkVersion, platformTarget}
+import android.Keys._
 import io.taig.sbt.sonatype.SonatypeHouserulePlugin.autoImport.githubProject
 import sbt._
 import sbt.Keys._
@@ -14,10 +14,11 @@ object Settings {
       Nil,
     minSdkVersion := "14",
     organization := "io.taig.android",
-    platformTarget := "android-26",
+    platformTarget := "android-27",
     scalacOptions ++=
       "-deprecation" ::
       "-feature" ::
-      Nil
+      Nil,
+    targetSdkVersion := "27"
   )
 }
