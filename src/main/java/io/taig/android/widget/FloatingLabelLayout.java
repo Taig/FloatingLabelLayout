@@ -161,8 +161,8 @@ public class FloatingLabelLayout extends LinearLayout {
         }
 
         if( !TextUtils.isEmpty( error ) ) {
-            setAlpha( 0f );
             setErrorEnabled( true );
+            this.error.setAlpha( 0f );
             this.error.setText( error );
 
             ViewCompat
@@ -170,13 +170,14 @@ public class FloatingLabelLayout extends LinearLayout {
                 .alpha( 1f )
                 .setDuration( 200 )
                 .setInterpolator( ScopeStealing.INTERPOLATOR )
+                .setListener( null )
                 .start();
         }
         else {
             if( isErrorEnabled() ) {
                 ViewCompat
                     .animate( this.error )
-                    .alpha( 1f )
+                    .alpha( 0f )
                     .setDuration( 200 )
                     .setInterpolator( ScopeStealing.INTERPOLATOR )
                     .setListener( new ViewPropertyAnimatorListenerAdapter() {

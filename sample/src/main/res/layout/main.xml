@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <io.taig.android.widget.FloatingLabelLayout
+        android:id="@+id/wrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Float above the text">
@@ -17,5 +18,19 @@
             android:text="Hello World" />
 
     </io.taig.android.widget.FloatingLabelLayout>
+
+    <Button
+        android:id="@+id/action1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Show error" />
+
+    <Button
+        android:id="@+id/action2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hide error" />
 
 </LinearLayout>
